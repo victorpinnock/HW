@@ -1,3 +1,7 @@
+// Inspiered by Ann H Murray’s Archimedean Spiral https://www.atariarchives.org/artist/sec1.php
+// https://www.openprocessing.org/user/49963 Work by liriel saarinen
+// https://forum.processing.org/two/discussion/13125/for-loop-to-make-a-spiral Comment By TfGuy44 October 2015 
+
 void setup() {
   size(800, 800);
   frameRate(160);
