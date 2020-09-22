@@ -19,7 +19,24 @@ void ww() {
     text("Press or Hold a-z to draw. Press 1 for RBG and 2 for HSB", 200,720);
     text("END & SAVE", 662,26);
     text("CLEAR", 24,26);
-};
+    
+    if (mousePressed) {
+       // button perameters
+      if ((mouseX < 100) && (mouseX > 0) && (mouseY > 0) && (mouseY < 50)) {
+        //button action
+       fill(255);
+      background(0);
+     }
+      
+     if ((mouseX < 750) && (mouseX > 640) && (mouseY > 0) && (mouseY < 50)) {
+        //button action
+        saveFrame("keydraw-###.jpg");
+         //note noLoop prevents system from constantly saving preview
+         exit(); }
+     }
+}
+     
+    
 
 void ss() {
   fill(0);
@@ -27,29 +44,12 @@ void ss() {
   rect(18,10,50,25);
   rect(650,10,95,25);
   rect(175,702,395,25);
-}
+  }
 
 void draw() {
    ss();
    ww();
-
-     if (mousePressed) {
-       // button perameters
-      if ((mouseX < 100) && (mouseX > 0) && (mouseY > 0) && (mouseY < 50)) {
-        //button action
-       fill(255);
-      background(0);
-      }
-     }
-     
-     if (mousePressed) {
-       // button perameters
-      if ((mouseX < 650) && (mouseX > 750) && (mouseY > 0) && (mouseY < 50)) {
-        //button action
-          saveFrame("Saved-###.jpg");
-         //note noLoop prevents system from constantly saving preview
-        noLoop();}}
-  
+   
     if (keyPressed) {
   
    //A-Z action keys
@@ -288,3 +288,4 @@ void draw() {
         }
       }
   }
+  
