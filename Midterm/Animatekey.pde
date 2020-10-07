@@ -68,6 +68,7 @@ if (keyPressed) {
     
     for (int i = 0; i < circles.length; i++) {
       
+     circles[i].displayr();
    circles[i].tmove();
     fill(random(20));
     }
