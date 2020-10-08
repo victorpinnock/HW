@@ -1,3 +1,5 @@
+//refference https://www.toptal.com/game/ultimate-guide-to-processing-simple-game
+
 /********* VARIABLES *********/
 
 // We control which screen is active by settings / updating
